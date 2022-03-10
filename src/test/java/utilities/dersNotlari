@@ -21,7 +21,8 @@
    b) Json Path -> JsonPath() json = response.JsonPath();
    c) Matchers Class
    d) De-Serialization
-   e)
+
+   e)JSON Object
    f)
    g)
    h)
