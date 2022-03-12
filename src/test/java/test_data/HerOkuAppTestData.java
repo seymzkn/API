@@ -23,8 +23,8 @@ public class HerOkuAppTestData {
     public HashMap<String,Object>setUpTestData(){
 
         HashMap<String,Object>bookingdates=new HashMap<>();
-        bookingdates.put("checkin","2022-02-01");
-        bookingdates.put("checkout","2022-02-11");
+        bookingdates.put("checkin","2022-03-01");
+        bookingdates.put("checkout","2022-03-11");
 
         HashMap<String,Object>expectedData=new HashMap<>();
         expectedData.put("firstname","Ali");
