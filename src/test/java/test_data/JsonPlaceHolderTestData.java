@@ -40,4 +40,54 @@ public class JsonPlaceHolderTestData {
         return expectedRequest;
 
     }
+
+    /*
+    https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönerdiğimde
+    {
+    "userId": 21,
+    "title": "Wash the dishes",
+    "completed": false
+    }
+    */
+
+    //PutRequest01
+    public JSONObject setUpPutData(){
+        JSONObject expectedRequest = new JSONObject();
+        expectedRequest.put("userId", 21);
+        expectedRequest.put("title", "Wash the dishes");
+        expectedRequest.put("completed", false);
+        return expectedRequest;
+    }
+
+    /*
+https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönderdiğimde
+{
+  "title": "Batch44"
+ }
+ */
+    //PatchRequest01
+    public JSONObject setUpPatchRequestData(){
+        JSONObject requestData = new JSONObject();
+        requestData.put("title", "Batch44");
+        return requestData;
+    }
+
+    /*
+     {
+ "userId": 10,
+ "title": "Batch44"
+ "completed": true,
+ "id": 198
+ }
+     */
+
+    //PatchRequest01
+    public JSONObject setUpPatchExpectedData(){
+        JSONObject expectedData = new JSONObject();
+        expectedData.put("userId", 10);
+        expectedData.put("title", "Batch44");
+        expectedData.put("completed", true);
+        expectedData.put("id", 198);
+        return expectedData;
+    }
 }
